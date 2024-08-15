@@ -73,8 +73,8 @@ public class Main {
         final SessionFactory sessionFactory;
         Properties props = new Properties();
         props.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
-        props.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-        props.put(Environment.URL, "jdbc:mysql://localhost:3306/world");
+        props.put(Environment.DRIVER, "com.p6spy.engine.spy.P6SpyDriver");
+        props.put(Environment.URL, "jdbc:p6spy:mysql://localhost:3306/world");
         props.put(Environment.USER, "root");
         props.put(Environment.PASS, "rootroot");
         props.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
